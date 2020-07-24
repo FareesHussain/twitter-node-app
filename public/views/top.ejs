@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/head %>
+</head>
+<body>
+    <header>
+        <% include ./partials/header %>
+    </header>
+    <div class="container">
+
+        <div class="jumbotron text-center">
+            <h1>Top Terms</h1>
+        </div>
+
+        <% terms.forEach(function(query,index){%>
+            <div class = "col-sm-6 panel">
+                <a class="btn btn-block btn-<%=query.style%> btn-lg"href="/results?q=<%query.term%>">
+                    <%= query.term%>
+                </a>
+            </div>
+        <%})%>
+    </div>
+    <footer>
+        <% include ./partials/footer %>
+    </footer>
+</body>
+</html>

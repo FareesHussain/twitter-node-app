@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const port = "3003"
+const port = "8810"
 var app = require('./app/server')
 
 app.listen(port,function(){
