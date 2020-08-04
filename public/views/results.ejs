@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <% include ./partials/head %>
+        <% include ("./partials/head") %>
     </head>
     <body>
         <header>
-            <% include ./partials/header %>
+            <% include ("./partials/header") %>
         </header>
         <div class="container">
             <h2>Results for :<strong><%= query %></strong> <small class="pull-right"><form id="result-submit"><input type="text" class="form-control" id="query" placeholder="Enter a search term..."/></form></small></h2>
@@ -41,7 +41,7 @@
         
         </div>
         <footer>
-            <% include ./partials/footer %>
+            <% include ("./partials/footer") %>
         </footer>
 
     </body>

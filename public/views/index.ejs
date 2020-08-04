@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <% include ./partials/head %>
+    <% include ("./partials/head") %>
 </head>
 <body>
     <header>
-        <%- include "(./partials/header)" %>
+        <%- include ("./partials/header") %>
     </header>
     <div class="container">
 
@@ -23,13 +23,13 @@
             </div>
         <% }) %>
 
-        <% if(searchers.length>0){%>
+        <% if(searches.length>0){%>
             <h3>Latest Searches</h3>
         <%} %>
 
     </div>
     <footer>
-        <% include ./partials/footer %>
+        <% include ("./partials/footer") %>
     </footer>
 </body>
 </html>
